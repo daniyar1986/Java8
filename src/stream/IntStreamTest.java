@@ -21,7 +21,7 @@ public class IntStreamTest {
     }
 
     @Test
-    public void itearte() {
+    public void iterate() {
         IntStream.iterate(0, operand -> operand + 2).forEach(System.out::println);
     }
 
