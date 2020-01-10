@@ -14,4 +14,10 @@ public class IntStreamTest {
     public void range() {
         IntStream.range(0, 10).forEach(System.out::print);
     }
+
+    @Test
+    public void rangeClosed() {
+        IntStream.rangeClosed(0, 10).forEach(System.out::print);
+    }
+
 }
