@@ -2,6 +2,8 @@ package stream;
 
 import org.junit.Test;
 
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
 public class IntStreamTest {
@@ -23,6 +25,11 @@ public class IntStreamTest {
     @Test
     public void iterate() {
         IntStream.iterate(0, operand -> operand + 2).forEach(System.out::println);
+    }
+
+    @Test
+    public void generate() {
+        IntStream.generate(() -> ThreadLocalRandom.current().nextInt()).limit(5).forEach(System.out::println);
     }
 
 }
