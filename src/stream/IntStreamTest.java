@@ -39,4 +39,12 @@ public class IntStreamTest {
                 .forEach(value -> System.out.print(value + " "));
     }
 
+    @Test
+    public void filter() {
+        IntStream.rangeClosed(1, 10)
+                .boxed()
+                .filter(value -> value % 2 == 0)
+                .forEach(value -> System.out.print(value + " "));
+    }
+
 }
