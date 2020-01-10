@@ -32,4 +32,11 @@ public class IntStreamTest {
         IntStream.generate(() -> ThreadLocalRandom.current().nextInt()).limit(5).forEach(System.out::println);
     }
 
+    @Test
+    public void map() {
+        IntStream.rangeClosed(1, 10)
+                .map(operand -> operand * operand)
+                .forEach(value -> System.out.print(value + " "));
+    }
+
 }
