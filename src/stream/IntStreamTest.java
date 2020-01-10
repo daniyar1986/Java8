@@ -20,4 +20,9 @@ public class IntStreamTest {
         IntStream.rangeClosed(0, 10).forEach(System.out::print);
     }
 
+    @Test
+    public void itearte() {
+        IntStream.iterate(0, operand -> operand + 2).forEach(System.out::println);
+    }
+
 }
