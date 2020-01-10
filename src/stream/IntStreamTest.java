@@ -2,7 +2,6 @@ package stream;
 
 import org.junit.Test;
 
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
